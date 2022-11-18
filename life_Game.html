@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Life</title>
+    <link rel="stylesheet" type="text/css" href="life_Game.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="./shape.js"></script>
+    <script src="./life_Game.js"></script>
+    <script src="./dragNclick.js"></script>
+</head>
+<body oncontextmenu="return false">
+<h1>Conway's Game of Life</h1>
+<a href="./Info.html">Plus d'Informations</a>
+<div id="menu">
+    <form method="post">
+        <div id="shapeExample">
+            <table border="1" id="shapes">
+                <tr>
+                    <th>Type</th>
+                    <th colspan="8">Formes</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Oscillator</th>
+                    <td class="shape">Blinker<br><input type="button" name="blinker" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Game_of_life_blinker.gif"></td>
+                    <td class="shape">Toad<br><input type="button" name="toad" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Game_of_life_toad.gif"></td>
+                    <td class="shape">Beacon<br><input type="button" name="beacon" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Game_of_life_beacon.gif"></td>
+                </tr>
+                <tr>
+                    <td class="shape">Pulsar<br><input type="button" name="pulsar" value="Générer" class="shapeButton"></td>
+                    <td class="shape" colspan="2"><img src="images/Game_of_life_pulsar.gif"></td>
+                    <td class="shape">Penta-decathlon<br><input type="button" name="penta" value="Générer" class="shapeButton"></td>
+                    <td class="shape" colspan="2"><img src="images/I-Column.gif" class="rotate"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Spaceships</th>
+                    <td class="shape">Glider<br><input type="button" name="glider" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Game_of_life_animated_glider.gif"></td>
+                    <td class="shape">Light-weight spaceship (LWSS)<br><input type="button" name="lwss" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Game_of_life_animated_LWSS.gif"></td>
+
+                    <td class="shape">Middle-weight spaceship (MWSS)<br><input type="button" name="mwss" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Animated_Mwss.gif"></td>
+                </tr>
+                <tr>
+                    <td class="shape">High-weight spaceship (HWSS)<br><input type="button" name="hwss" value="Générer" class="shapeButton"></td>
+                    <td class="shape"><img src="images/Animated_Hwss.gif"></td>
+                    <th colspan="2" class="shape">Random Generation<br><input type="button" name="random" value="Générer" class="shapeButton"></th>
+                    <td colspan="2" class="shape"><img src="images/Game_of_life_random.png"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="right">
+            <div id="createShape">
+                <h2>Créer une forme</h2>
+                <table id="creationTable" border="1" cellspacing="0">
+
+                </table>
+            </div>
+            <input type="button" name="generate_usrShape" value="Générer" id="usrGeneration" class="usrButton">
+            <input type="button" name="clear_usrShape" value="Clear" id="clearUsr" class="usrButton">
+        </div>
+        <table id="bigButton">
+            <tr>
+                <td id="left"><input type="button" name="start" value="Start" class="mainButton" id="start"></td>
+                <td id="right"><input type="button" name="clear" value="Clear" class="mainButton" id="clear"></td>
+            </tr>
+        </table>
+
+        
+    </form>
+</div>
+<h3 id="nbGeneration">Génération : </h3>
+<table border="1" cellspacing="0" id="main">
+</table>
+</body>
+</html>
