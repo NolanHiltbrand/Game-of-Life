@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>InfoJeuDeLaVie</title>
+    <link rel="stylesheet" href="./StyleSheetMain.css"/>
+</head>
+<body>
+
+    <h1>Info Jeu de la Vie</h1>
+    <br />
+
+    <h2>Sommaire</h2>
+    <ol>
+        <li><a href="#CestQuoi">le jeu de la vie C'est quoi?</a></li>
+        <li><a href="#regle">Les régles d'apparition et disparition des cellules</a></li>
+        <li><a href="#forme">Les formes du jeu de la vie</a></li>
+        <ul>
+            <li><a href="#formeStat">Les formes statiques</a></li>
+            <li><a href="#formeOsc">Les formes oscillantes</a></li>
+            <li><a href="#formeMob">Les formes mobiles</a></li>
+            <li><a href="#formeSpe">Les formes spécial ou infini</a></li>
+        </ul>
+        <li><a href="#AmusezVous">Amusez vous!</a></li>
+    </ol>
+    <br />
+
+    <div id="CestQuoi"><h2>le jeu de la vie C'est quoi?</h2></div>
+    <p>Le Jeu de la vie a été inventé par John Horton Conway en 1970, professeur de mathématiques à l'université de Cambridge, au Royaume-Uni</p>
+    <p>
+        Le jeu de la vie est un jeu à zéro joueur. C'est a dire qu'il ne faut faire aucune interaction pendant le déroulement du jeu. Vous appuyer sur start et vous regadez comment
+        le jeu se déroule au fil des génération.
+    </p>
+    <p></p>
+    <p>
+        Le fonctionnement du jeu est assez simple. Il est composé d'une grille a double dimension sur la quelle vous pouvez voir des carrés blancs et noirs. Les carrés noirs représente
+        des cellules qui suite a certaine régle simple vas nous donner l'imprétion que les cellules sont vivante et évolue dans le temps.
+    </p>
+    <br />
+
+
+    <div id="regle"><h2>Les régles d'apparition et disparition des cellules</h2></div>
+    <p>1. La première régle fais en sorte que si la cellule est en vie(carré noir) et qu'elle possède moins de deux voisins vivant, la cellule meurt de sous population (elle devient blanche).</p>
+
+    <p>2. La deuxième régle fais en sorte que si la cellule est en vie et qu'elle possède plus de trois voisins vivant, la cellule meurt de surpopulation (elle devient blanche).</p>
+
+    <p>3. La troisième règle fais en sorte que si la cellule est vivante et qu'elle possède exactement deux ou trois voisins vivant, la cellule reste en vie (elle reste noir).</p>
+
+    <p>4. La quatrième règle fais en sorte que si la cellule est morte(blanche) et qu'elle possède exactement 3 voisins vivant, les cellule se reproduise et la cellule vient a la vie (elle devient noir).</p>
+
+    <p>Ces quatre règles sont celle qui régissent le fonctionnement du jeu de la vie et même si se sont des règle basic elles mènent ensemble a une multitude de forme complex qui on chacune des comportement diffèrent.</p>
+    <br />
+
+
+    <div id="forme"><h2>Les formes du jeu de la vie</h2></div>
+    <p>Le jeu de la vie possède trois type de forme stable qui on des comportement relativement différent les uns des autres.</p>
+
+    <div id="formeStat"><h3>Les formes statiques</h3></div>
+    <p>Les formes statiques sont des formes qui une foit formé ne bouge plus et reste dans le même état tant que aucune cellule ne vient brisé cette équilibre.</p>
+    <p>Voici quelques formes statiques</p>
+    <img src="./images/Bloc.PNG" alt="Le Bloc" />
+    <img src="./images/peniche.PNG" alt="La Péniche" />
+    <img src="./images/Bateau.PNG" alt="Le Bâteau" />
+    <img src="./images/flaneur.PNG" alt="Le Flâneur" />
+    <img src="./images/ruche.PNG" alt="La Ruche" />
+    <img src="./images/etang.PNG" alt="L'étang" />
+    <p>Ces formes sont relativement simple et leur seul caracthéristique est qu'elle sont stable. </p>
+
+    <div id="formeOsc"><h3>Les formes oscillantes</h3></div>
+    <p>Les formes oscillantes sont des forme qui suivent un même paterne constituer de deux a quize phase différente qui se répètent a l'infini tant que rien ne vient perturbé la forme.</p>
+    <p>Voici quelques formes oscillantes</p>
+    <img src="./images/Blinker-phase1.PNG" alt="Le Clignotant" />
+    <img src="./images/Blinker-phase2.PNG" alt="Le Clignotant" />
+    <p>Cette forme s'appel le clignotant et elle varie entre ces 2 phases. C'est la forme oscillante la plus basique.</p>
+    <br />
+    <img src="./images/Grenouille-phase1.PNG" alt="La Grenouille" />
+    <img src="./images/Grenouille-phase2.PNG" alt="La Grenouille" />
+    <p>Cette forme s'appelle la grenouille cette un forme oscillante sur 2 phases comme si dessus.</p>
+    <br />
+    <img src="./images/Beacon-phase1.PNG" alt="La Balise" />
+    <img src="./images/Beacon-phase2.PNG" alt="La Balise" />
+    <p>Cette forme s'appelle la balise et elle aussi oscille sur 2 phases comme si dessus.</p>
+    <br />
+    <img src="./images/gros-beacon.PNG" alt="La grosse balise" />
+    <p>Cette forme est similaire a la balise mais n'a pas le même patern et elle oscille sur 9 phases. Testez cette forme et modifier la taille des carrés pour avoir beacoup d'autre résultat joli a regarder.</p>
+    <br />
+    <img src="./images/Pulsar.PNG" alt="Le Pulsar" class="pulsar" />
+    <img src="./images/Pulsar-phase2.PNG" alt="Le Pulsar" class="pulsar" />
+    <img src="./images/Pulsar-phase3.PNG" alt="Le Pulsar" class="pulsar" />
+    <p>Cette forme s'appelle le pulsar et elle oscille sur 3 phases comme si dessus. C'est une forme plutôt complex comme vous pouvez le voir mais elle peut être créer très simplement avec une petite forme de seulement 7 cellule comme si dessous.</p>
+    <img src="./images/Pulsar-seed.PNG" alt="graine de pulsar" />
+    <img src="./images/Pulsar-seed2.PNG" alt="graine de pulsar" />
+    <p>Ces formes s'appellent graine de pulsar parce qu'elles permetent de créer un pulsar</p>
+    <br />
+    <img src="./images/penta-decatlon.PNG" alt="Le Penta-décatlon" />
+    <p>Cette forme s'appelle le penta-décatlon parce que elle oscille sur 15 phase. Comme le pulsar elle aussi peut être créer avec une forme très simple.</p>
+    <img src="./images/seed-penta-decatlon.PNG" alt="La Graine de Penta-décatlon" />
+    <p>Cette forme s'appelle graine de penta décatlon parce que même si ce n'est qu'une ligne de 10 cellule elle permet de crée un penta décatlon. </p>
+    <br />
+    <div id="formeMob"><h3>Les formes mobiles</h3></div>
+    <p>Les formes mobiles sont très similaire aux formes oscillante, c'est a dire que comme les forme oscillante elle suivent un paterne qui se répète mais elle ne reste pas au même endroit, elle se déplace sur la grille dans une direction à l'infini.</p>
+    <p>Voici quelques formes mobiles</p>
+    <img src="./images/Glider.PNG" alt="glider" />
+    <p>Cette forme s'appelle le glider et c'est la forme mobile la plus commune. Il se déplace en diagonal</p>
+    <br />
+    <img src="./images/spaceship.PNG" alt="Light/Middle/Highweight spaceship" />
+    <p>Ces formes sont le Lightweight spaceship, le Middleweight spaceship et le Highweight spaceship. ils ont les trois le même fonctionnement, la seul chose qui change entre ces trois vaisseaux est leur taille. Ils se déplacent en ligne droite.</p>
+    <br />
+    <img src="./images/60P5H2V0.PNG" alt="60P5H2V0" />
+    <p>Cette forme a le joli nom 60P5H2V0. il a la parcularité d'avoir un model symétrique et il se déplace en ligne droite.</p>
+    <br />
+    <img src="./images/backrake.PNG" alt="backrake" class="backrake" />
+    <p>Cette forme s'appelle backrake. Il n'est pas comme les autre forme mobile que l'on a vu parce qu'il fait partie des forme mobile qui laisse un trace derrière lui et encore plus spécial la trainé qu'il laisse est une trainée de glider donc c'est une forme mobile qui génére d'autre forme mobile. On peut aussi voir qu'il y a un Highweight spaceship dans son model. Il se déplace en ligne droite. </p>
+    <br />
+
+    <div id="formeSpe"><h3>Les formes spécial ou infini</h3></div>
+    <p>Il y a certaine forme qui sont interéssante à cause de leur comportement unique ou qui on un comportement différent de statique, oscillante et mobile. Par example il existe plusieur forme qui se repende a l'infini sur le tableau et leur seul limite est la taille du tableau dans le quel elle sont. il y a aussi quelque forme qui on des caractéristique vraiment incroyable qui mérite d'être aborder. </p>
+    <p>Voici quelques formes spécial</p>
+    <img src="./images/R-pentomino.PNG" alt="R-pentomino" />
+    <p>Cette forme s'appelle R-pentomino et sa particularité est que même si elle ne fais que 5 cellules elle continu d'évoluer jusqu'à 1106 génération.</p>
+    <br />
+    <img src="./images/5206.PNG" alt="5206" />
+    <p>Cette forme n'a pas de nom mais elle a la particularité de ne faire que 7 cellules et pourtant elle continu d'évoluer jusqu'à 5206 génération.</p>
+    <br />
+    <img src="./images/rabbits.PNG" alt="Rabbits" />
+    <img src="./images/rabbits2.PNG" alt="Rabbits" />
+    <p>Ces forme s'appelle Rabbits et elle battent tous le monde en terme de nombre de génération. Certe elles ne font que 9 cellules mais leur évolution est incroyable parce qu'elle s'arréte d'évoluer après 17340 génération se qui est gigantesque. </p>
+    <br />
+    <img src="./images/FormeInfini.PNG" alt="Forme Infini" class="Inf1" />
+    <img src="./images/formeInfini2.PNG" alt="Forme Infinis" class="Inf2" />
+    <p>Ces deux formes on le nom de Spacefiller (Rempliseur d'espace) et leur particularité est de s'agrandir a l'infini et créé une énorme grille de cellule comme dans l'example si dessous.</p>
+    <img src="./images/Spacefiller_animate.gif" alt="gif annimer forme infini" class="ExInf" />
+    <br />
+    <br />
+    <br />
+    <div id="AmusezVous"><h2>Amusez vous!</h2></div>
+    <p>
+        Maintenant que vous avez quelques base de comment fonctionne le jeu de la vie, Vous pouvez réfléchir sur comment créer des formes avec des action intéréssante ou même découvrire une nouvelle forme jamais vu. Depasser vos limite pour par example créer des ensemble de cellule qui font différente action.
+        Pour vous donnez une idée il y a déjâ eu des gens qui on créer le jeu de la vie dans le jeu de la vie. Donc bonne chance dans vos découvertes et recherches. <a href="./life_Game.html"><b>Amusez vous bien!</b></a>
+    </p>
+
+</body>
+</html>

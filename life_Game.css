@@ -1,0 +1,122 @@
+h1{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+h3#nbGeneration{
+    margin-bottom: 0px;
+}
+a{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*Tableau avec toutes les cellules*/
+table#main{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.alive{
+    background-color: black;
+}
+td.cell{
+    width: 7px;
+    height: 7px;
+    padding: 0px;
+}
+
+
+/*Menu des formes et bouttons*/
+div#menu{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+div#right{
+    float: right;
+    margin-right: 100px;
+}
+div#shapeExample{
+    display: inline-block;
+}
+div#selectShape{
+    margin-right: 12px;
+}
+/* Tableau des exemples de formes */
+table#shapes{
+    background-color: lightgray;
+    margin-bottom: 10px;
+}
+table#shapes tr th{
+    font-size: 20px;
+    width: 70px;
+}
+td.shape{
+    width: 100px;
+    text-align: center;
+}
+input.shapeButton{
+    margin-top: 5px;
+    width: 80px;
+    height: 25px;
+    font-size: 16px;
+}
+
+/* Bouton Start et Clear*/
+input.mainButton{
+    display: inline;
+    width: 400px;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    float: right;
+}
+td#right{
+    text-align: left;
+}
+td#left{
+    text-align: right;
+}
+table#bigButton{
+    margin-left: 560px;
+}
+/* Bouton Drag and Click*/
+.centerBtn{
+    padding-right: 200px;
+}
+.centerTxt{
+    text-align: center;
+}
+
+
+
+
+/* Tableau de création de formes*/
+h2{
+    margin-bottom: 0px;
+}
+table#creationTable{
+    float: right;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+td.creationCell{
+    width: 15px;
+    height: 15px;
+}
+input.usrButton{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+
+
+
+.rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
